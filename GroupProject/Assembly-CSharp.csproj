@@ -49,6 +49,7 @@
      <Compile Include="Assets\IPlist.cs" />
      <Compile Include="Assets\IPspawn.cs" />
      <Compile Include="Assets\IPspawnV2.cs" />
+     <Compile Include="Assets\Level1OnClick.cs" />
      <Compile Include="Assets\Popup.cs" />
      <Compile Include="Assets\Spawn.cs" />
      <Compile Include="Assets\Timer.cs" />
