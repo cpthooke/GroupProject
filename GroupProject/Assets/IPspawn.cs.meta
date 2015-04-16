@@ -2,7 +2,11 @@ fileFormatVersion: 2
 guid: 1af5246d2ff323c46a03e3c5171150c2
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - endLevel1: {fileID: 123474, guid: 18f522d2b667bf846aed93b4ac4704c3, type: 2}
+  - endLevel2: {fileID: 120206, guid: b8a242794b36e6546ad9c922a4ed797c, type: 2}
+  - endLevel3: {fileID: 163170, guid: 1cb32f080c483f94ba1eabc03273db83, type: 2}
+  - endLevel4: {fileID: 155712, guid: 8d6c649f3ded04e4b96d54d12794ecc0, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

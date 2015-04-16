@@ -48,13 +48,16 @@
   <ItemGroup>
      <Compile Include="Assets\IPlist.cs" />
      <Compile Include="Assets\IPspawn.cs" />
-     <Compile Include="Assets\IPspawnV2.cs" />
      <Compile Include="Assets\Level1OnClick.cs" />
      <Compile Include="Assets\Popup.cs" />
      <Compile Include="Assets\Spawn.cs" />
      <Compile Include="Assets\Timer.cs" />
      <Compile Include="Assets\Translate.cs" />
      <Compile Include="Assets\buttonText.cs" />
+     <Compile Include="Assets\delete.cs" />
+     <Compile Include="Assets\endGame.cs" />
+     <Compile Include="Assets\endLevel.cs" />
+     <Compile Include="Assets\quit.cs" />
      <Compile Include="Assets\theScore.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>

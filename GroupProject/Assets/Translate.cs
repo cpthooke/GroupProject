@@ -13,7 +13,7 @@ public class Translate : MonoBehaviour {
 	void Start () {
 		// is it a virus
 		int rand = Random.Range (0, 10);
-		if (rand == 7) {
+		if (rand == 9) {
 			virus = true;
 		}
 
@@ -38,23 +38,23 @@ public class Translate : MonoBehaviour {
 		if (this.gameObject.name == "Button2(Clone)" && virus != true) {
 			rand = Random.Range (0, 16);
 			data = GameObject.FindGameObjectWithTag("Respawn").GetComponent<IPspawn>().get(rand, 2);
-		} else {
+		} else if (this.gameObject.name == "Button2(Clone)" && virus == true){
 			rand = Random.Range (17, 19);
 			data = GameObject.FindGameObjectWithTag("Respawn").GetComponent<IPspawn>().get(rand, 2);
 		}
 		// level 3
-		if (this.gameObject.name == "Button3(Clone)") {
+		if (this.gameObject.name == "Button3(Clone)" && virus != true) {
 			rand = Random.Range(0, 16);
 			data = GameObject.FindGameObjectWithTag("Respawn").GetComponent<IPspawn>().get(rand, 4);
-		} else {
+		} else if (this.gameObject.name == "Button3(Clone)" && virus == true) {
 			rand = Random.Range (17, 19);
 			data = GameObject.FindGameObjectWithTag("Respawn").GetComponent<IPspawn>().get(rand, 4);
 		}
 		// level 4
-		if (this.gameObject.name == "Button4(Clone)") {
+		if (this.gameObject.name == "Button4(Clone)" && virus != true) {
 			rand = Random.Range(0, 16);
 			data = GameObject.FindGameObjectWithTag("Respawn").GetComponent<IPspawn>().get(rand, 3);
-		} else {
+		} else if (this.gameObject.name == "Button4(Clone)" && virus == true) {
 			rand = Random.Range (17, 19);
 			data = GameObject.FindGameObjectWithTag("Respawn").GetComponent<IPspawn>().get(rand, 3);
 		}
@@ -75,7 +75,7 @@ public class Translate : MonoBehaviour {
 		GetComponentInChildren<Text> ().text = IP;
 
 		// move box
-		float moveSpeed = 30f;
+		float moveSpeed = 40f;
 		transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
 
 		// if below screen:
@@ -98,8 +98,8 @@ public class Translate : MonoBehaviour {
 	}
 
 	void makePopup(){
-		int x = Random.Range (50, 600);
-		int y = Random.Range (50, 400);
+		int x = Random.Range (200, 600);
+		int y = Random.Range (50, 800);
 		GameObject button = Instantiate(popup, new Vector3(x, y, 50), Quaternion.identity) as GameObject;
 		button.transform.parent = GameObject.Find("popupList").transform;
 	}
